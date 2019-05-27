@@ -7,7 +7,7 @@ import App from "./App";
 describe("App", () => {
   it("renders View", () => {
     const component = shallow(<App />);
-    expect(component.find(View)).toHaveLength(1);
+    expect(component.find(View)).toHaveLength(2);
   });
   it('renders Text with text "Aucun article"', () => {
     const component = shallow(<App />);

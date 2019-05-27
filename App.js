@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Alert, Button } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -14,8 +14,14 @@ const styles = StyleSheet.create({
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Aucun Article</Text>
+      <View>
+        <View style={styles.container}>
+          <Text>Aucun Article</Text>
+        </View>
+        <Button
+          onPress={() => Alert.alert("Touché")}
+          title="Ajouter un article"
+        />
       </View>
     );
   }
